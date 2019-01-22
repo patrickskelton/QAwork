@@ -1,0 +1,39 @@
+
+import java.util.ArrayList;
+public class Main {
+
+
+	public static void main(String[] args) {
+		/**int firstNumber=10;
+		int secondNumber = 15;
+		
+		int total = Calculator.add(firstNumber,secondNumber);
+		String outputMessage = "The sum of " + firstNumber + " and " + secondNumber + " is: " + total;
+		System.out.println(outputMessage);
+		
+		Calculator calc = new Calculator();
+		
+		 total = calc.subtract(firstNumber,secondNumber);
+		 outputMessage = "The subtraction of " + firstNumber + " and " + secondNumber + " is: " + total;
+		System.out.println(outputMessage);**/
+		//System.out.println(exersice.blackjack(23, 45));
+		//System.out.println(exersice.uniquesum(2,2,3));
+		
+		Person john = new Person("john");
+		
+		john.setPersonAge("21");
+		john.setPersonJob("Accountant");
+		
+		Person harry = new Person("harry");
+		harry.setPersonAge("24");
+		harry.setPersonJob("Waiter");
+		
+		ArrayList<Person> people = new ArrayList<Person>();
+		people.add(john);
+		people.add(harry);
+		for(Person guy : people) {
+			System.out.println(guy.getPersonName());
+		}
+	}
+
+}

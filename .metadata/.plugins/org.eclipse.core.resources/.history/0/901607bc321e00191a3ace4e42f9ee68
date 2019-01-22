@@ -1,0 +1,20 @@
+
+public class Person {
+		String personAge;
+		String personJob;
+		String personName;
+		public Person(String Name) {
+			personName = Name;
+		}
+		
+		public void setAge(String age) {
+			personAge=age;
+		}
+		public void setJob(String job) {
+			personJob=job;
+		}
+		public String[] ask() {
+			return new String[] {personName,personAge,personJob,};
+		}
+	}
+

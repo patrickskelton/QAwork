@@ -10,7 +10,7 @@ public class Calculator {
 	public static int multiply(int firstNumber, int secondNumber) {
 		return firstNumber *secondNumber;
 	}
-	public static 
+//	public static 
 
 
 }

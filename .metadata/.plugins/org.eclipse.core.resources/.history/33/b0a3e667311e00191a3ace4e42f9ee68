@@ -1,0 +1,48 @@
+import exersice.person;
+
+public class Main {
+
+	public class person {
+		String personAge;
+		String personJob;
+		String personName;
+		public person(String Name) {
+			personName = Name;
+		}
+		
+		public void setAge(String age) {
+			personAge=age;
+		}
+		public void setJob(String job) {
+			personJob=job;
+		}
+		public String[] ask() {
+			return new String[] {personName,personAge,personJob,};
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		/**int firstNumber=10;
+		int secondNumber = 15;
+		
+		int total = Calculator.add(firstNumber,secondNumber);
+		String outputMessage = "The sum of " + firstNumber + " and " + secondNumber + " is: " + total;
+		System.out.println(outputMessage);
+		
+		Calculator calc = new Calculator();
+		
+		 total = calc.subtract(firstNumber,secondNumber);
+		 outputMessage = "The subtraction of " + firstNumber + " and " + secondNumber + " is: " + total;
+		System.out.println(outputMessage);**/
+		//System.out.println(exersice.blackjack(23, 45));
+		//System.out.println(exersice.uniquesum(2,2,3));
+		
+		person john = new person("john");
+		
+		john.setAge("21");
+		john.setJob("Accountant");
+		System.out.println(john.ask());
+	}
+
+}
