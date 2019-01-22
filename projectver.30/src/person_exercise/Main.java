@@ -1,3 +1,5 @@
+package person_exercise;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 public class Main {
