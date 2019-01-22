@@ -1,7 +1,8 @@
 
+
 public class Main {
-	
-	
+
+
 	public static void main(String[] args) {
 		/**int firstNumber=10;
 		int secondNumber = 15;
@@ -16,7 +17,15 @@ public class Main {
 		 outputMessage = "The subtraction of " + firstNumber + " and " + secondNumber + " is: " + total;
 		System.out.println(outputMessage);**/
 		//System.out.println(exersice.blackjack(23, 45));
-		System.out.println(exersice.uniquesum(2,2,3));
+		//System.out.println(exersice.uniquesum(2,2,3));
+		
+		Person john = new Person("john");
+		
+		john.setPersonAge("21");
+		john.setPersonJob("Accountant");
+		for(String stuff : john.ask()) {
+		System.out.println(stuff);
+		}
 	}
 
 }
