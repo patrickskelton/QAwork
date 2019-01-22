@@ -1,0 +1,13 @@
+
+public class exersice {
+	public static int method(int firstNumber, int secondNumber, boolean status) {
+		if(status) {
+		return firstNumber + secondNumber;
+		}
+		else {
+			return firstNumber*secondNumber;
+		}
+		
+	}
+
+}

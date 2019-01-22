@@ -1,0 +1,24 @@
+
+public class exersice {
+	public static void method(int firstNumber, int secondNumber, boolean status) {
+		if(firstNumber == 0 || secondNumber ==0) {
+			if(firstNumber==0) {
+				System.out.println(secondNumber);
+			}
+			else {
+				System.out.println(firstNumber);
+			}
+		
+		}
+		if(status) {
+		int total = firstNumber + secondNumber;
+		System.out.println(total);
+		}
+		else {
+		int total =  firstNumber*secondNumber;
+		System.out.println(total);
+		}
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+
+public class exersice {
+	public static void method(int firstNumber, int secondNumber, boolean status) {
+		if(status) {
+		int total = firstNumber + secondNumber;
+		System.out.println(total);
+		}
+		else {
+		int total =  firstNumber*secondNumber;
+		System.out.println(total);
+		}
+		
+	}
+
+}

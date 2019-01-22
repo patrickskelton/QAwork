@@ -1,0 +1,7 @@
+
+public class exersice {
+	public static void sent() {
+		System.out.println("Hello World!");
+	}
+
+}

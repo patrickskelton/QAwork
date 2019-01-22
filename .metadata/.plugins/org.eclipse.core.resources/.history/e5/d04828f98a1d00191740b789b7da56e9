@@ -1,0 +1,7 @@
+
+public class exersice {
+	public static String sent(String sentence) {
+		System.out.println(sentence);
+	}
+
+}
