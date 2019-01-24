@@ -29,7 +29,12 @@ public class person {
 	}
 	
 	
+	@Override
 	
+	public String toString() {
+		
+		return personName + " " + personAge + " " + personOccupation ;
+	}
 	
 }
 
