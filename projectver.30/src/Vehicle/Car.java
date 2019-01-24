@@ -1,6 +1,6 @@
 package Vehicle;
 
-public class Car extends Vehicle{
+/*public class Car extends Vehicle{
 	
 	private String brand;
 	
@@ -9,4 +9,4 @@ public class Car extends Vehicle{
 		
 	}
 	public int cost
-}
+}*/

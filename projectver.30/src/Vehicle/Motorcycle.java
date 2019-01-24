@@ -1,6 +1,6 @@
 package Vehicle;
 
-public class Motorcycle extends Vehicle{
+/*public class Motorcycle extends Vehicle{
 	private String brand;
 	public Motorcycle(String ID,int age,String type){
 		super(ID,age);
@@ -12,4 +12,4 @@ public class Motorcycle extends Vehicle{
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
-}
+}*/
