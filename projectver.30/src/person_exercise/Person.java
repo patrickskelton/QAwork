@@ -33,7 +33,7 @@ public class Person {
 		return personName;
 	}
 	public boolean checkName(String guess) {
-		if(guess==personName) {
+		if(guess.equals(personName.toUpperCase())) {
 			return true;
 		}
 		else {

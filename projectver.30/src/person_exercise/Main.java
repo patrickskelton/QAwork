@@ -19,10 +19,12 @@ public class Main {
 		 outputMessage = "The subtraction of " + firstNumber + " and " + secondNumber + " is: " + total;
 		System.out.println(outputMessage);*/
 		//System.out.println(exersice.blackjack(23, 45));
-		//System.out.println(exersice.uniquesum(2,2,3));
-		/*System.out.println("Enter person to search: ");
+		//System.out.println(exersice.uniquesum(2,2,3));*/
+		System.out.println("Enter person to search: ");
 		Scanner sc = new Scanner(System.in);
 		String Guess = sc.nextLine();
+		Guess = Guess.toUpperCase();
+		sc.close();
 		Person john = new Person("john");
 		
 		john.setPersonAge("21");
@@ -31,21 +33,20 @@ public class Main {
 		Person harry = new Person("harry");
 		harry.setPersonAge("24");
 		harry.setPersonJob("Waiter");
-		
+		int sum=0;
 		ArrayList<Person> people = new ArrayList<Person>();
 		people.add(john);
 		people.add(harry);
 		for(int i=0;i<people.size();i++) {
 			if(people.get(i).checkName(Guess)){
 				System.out.println("Yes we have a : " + Guess + " who is " + people.get(i).getPersonAge() + " years old and works as a " + people.get(i).getPersonJob() );
+				sum+=1;
 				break;
-		}
-			else {
-				System.out.println("Sorry couldn't find that name");
 			}
-			}*/
-		
-		
+		}
+		if  (sum==0) {
+			System.out.println("Sorry couldn't find that name");
+		}
 		
 		
 		}
