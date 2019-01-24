@@ -1,19 +1,26 @@
 package Prime_number1;
 
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
 	
-	public static int len = 1;
+
 
 	public static boolean isPrime(int input, ArrayList<Integer> array) {
 		
-		len = array.size();
-
-		for (int p : array) {
-			if (input % p == 0) {
+		int len = array.size();
+		int upperLimit = (int) Math.sqrt((double)input);
+		
+		
+		for (int p=0; p<len;p++) {
+			if(array.get(p)>upperLimit) {
+				break;
+			}
+			
+			if (input % array.get(p) == 0) {
 				return false;
 			}
 		}
@@ -37,7 +44,7 @@ public class Main {
 				//System.out.println(i);
 			}
 		}
-		System.out.println("I found " + count + " this many primes!");
+		System.out.println("I found " + count + " many primes!");
 	}
 	// how many prime numbers between 0 and 3000000
 }
