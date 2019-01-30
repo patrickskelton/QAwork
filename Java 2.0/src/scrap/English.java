@@ -28,34 +28,41 @@ public class English {
 	public void findWordAndReplace(String word,String word2) {
 		int len=word.length();
 		places.clear();
-		places.add(0);
-		int len4 = word2.length();
+		
+		
 		findWord(word);
-		String result="";
-		int ignore=0;
+		String result = "";
+		int ignore = 0;
+		boolean first =true;
+		boolean pass=false;
 		int len3 = places.size();
-		for(int j=0;j<len2;j++) {
-			if(ignore<1) {
-			for(int i=0;i<len3;i++) {
-				if(places.get(i)==j) {
-					for(int k=0;k<len4;k++) {
-						result += word2.charAt(k);
-						
+		
+		for (int j = 0; j < len2; j++) {
+			
+			if (!(ignore==0)||first) {
+				for(int i=0; i<len3;i++) {
+					if(places.get(i)==j) {
+						ignore = len;
+						//System.out.println(ignore);
+						result += word2;
+						pass=true;
 						
 					}
-					ignore=len;
 				}
-			else {
+				if(!pass) {
 					result += sentence.charAt(j);
+					ignore -= 1;
 					
+					//System.out.println(ignore);
 				}
+
+			} else {
+				
+				//result += sentence.charAt(j);
+				ignore -= 1;
+				//System.out.println(ignore);
 			}
-			
-			}else {
-				ignore-=1;
-			}
-		
-		
+		first =false;
 		}
 		System.out.println(result);
 	}
