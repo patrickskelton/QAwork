@@ -2,24 +2,35 @@ package digits_to_words;
 
 public class conversion {
 	public static void digitsToWords(int input) {
+		if(input>=0 && input<10000) {
 		int thousand=input/1000;
-		int hundroud=(input-thousand*1000)/100;
-		int ten=(input-(thousand*1000+hundroud*100))/10;
-		int unit=(input-(thousand*1000+hundroud*100+ten*10));
+		int hundred=(input-thousand*1000)/100;
+		int ten=(input-(thousand*1000+hundred*100))/10;
+		int unit=(input-(thousand*1000+hundred*100+ten*10));
 		number(thousand);
 		if(thousand>0) {
 			System.out.print("thousand ");
 		}
-		number(hundroud);
-		if(hundroud>0) {
+		number(hundred);
+		if(hundred>0) {
 			System.out.print("hundred ");
+			
 		}
 		if(ten==1) {
+			System.out.print("and ");
 			teens(unit);
+			
 		}
 		else {
+			System.out.print("and ");
 			tens(ten);
+			
 			number(unit);
+			if(unit==0 && hundred==0 && thousand==0 && ten==0) {
+				System.out.println("zero");
+			}
+		}}else {
+			System.out.println("incorrect input!");
 		}
 		
 		
@@ -29,6 +40,7 @@ public class conversion {
 	}
 		public static void number(int input) {
 			switch(input) {
+			
 			case 1: System.out.print("one ");
 			break;
 			case 2: System.out.print("two ");
@@ -76,6 +88,8 @@ public class conversion {
 	}
 		public static void teens(int input) {
 			switch(input) {
+			case 0 : System.out.println("ten");
+			break;
 			case 1: System.out.print("eleven");
 			break;
 			case 2: System.out.print("twelve");
