@@ -17,12 +17,12 @@ public class Main {
 		
 		
 		English sent1 = new English(secondStep);
-//		System.out.println("what don't you like?");
-//		String thirdStep = userInput.nextLine();
-//		System.out.println("what should it be replaced with?");
-//		String fourthStep = userInput.nextLine();
+		System.out.println("what don't you like?");
+		String thirdStep = userInput.nextLine();
+		System.out.println("what should it be replaced with?");
+		String fourthStep = userInput.nextLine();
 		
-		sent1.print1(secondStep);
+		sent1.findWordAndReplace(thirdStep,fourthStep);
 		userInput.close();
 		
 		
